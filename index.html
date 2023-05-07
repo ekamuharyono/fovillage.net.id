@@ -1,0 +1,354 @@
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOVillage .NET</title>
+  <!-- Add font awesome -->
+  <script src="https://kit.fontawesome.com/e1d71a4bcc.js" crossorigin="anonymous"></script>
+  <!-- Add Tailwind CSS -->
+  <link rel="stylesheet" href="./dist/output.css">
+  <!-- Add AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Add Custom CSS -->
+  <link href="./src/styles.css" rel="stylesheet">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Add Navbar -->
+  <!-- <header class="primary__header">
+    <nav class="navbar container">
+      <a href="/" class="logo">FOVillage .NET</a>
+      <ul class="nav__list">
+        <li>
+          <a href="#/" class="nav__link">Home</a>
+        </li>
+        <li>
+          <a href="#paket" class="nav__link">Paket</a>
+        </li>
+        <li>
+          <a href="#kontak" class="nav__link">Kontak</a>
+        </li>
+      </ul>
+    </nav>
+  </header> -->
+  <header>
+    <nav class="shadow-md fixed w-screen primary__header">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex-shrink-0 flex items-center">
+            <a href="#" class="text-gray-800 font-bold text-2xl">FOVillage .NET</a>
+          </div>
+          <div class="flex items-center">
+            <a href="#home" class="text-gray-800 hover:text-gray-600 font-medium text-lg mr-4 blur-none">Home</a>
+            <a href="#paket" class="text-gray-800 hover:text-gray-600 font-medium text-lg mr-4">Produk & Promo</a>
+            <a href="#testimonials" class="text-gray-800 hover:text-gray-600 font-medium text-lg mr-4">Testimoni</a>
+            <a href="#faq" class="text-gray-800 hover:text-gray-600 font-medium text-lg">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Add Hero Section -->
+  <section id="home" class="bg-blue-400 text-white pt-32 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex md:flex-row-reverse md:items-center md:justify-between">
+        <div class="md:w-1/2 mb-6 md:mb-0" data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1538480563120-4f4ce77a3ad4" alt="Hero Image"
+            class="w-full h-auto">
+        </div>
+        <div class="md:w-1/2" data-aos="fade-up">
+          <h1 class="text-4xl font-bold mb-4">Internet Super Cepat dengan FOVillage .NET</h1>
+          <p class="text-lg mb-6">Sekali berlangganan bisa akses dimana saja!</p>
+          <a href="#paket"
+            class="bg-white hover:bg-gray-100 text-blue-500 font-bold py-2 px-4 rounded inline-flex items-center">Daftar
+            Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add Features Section -->
+  <section id="paket" class="packages py-20">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Paket Internet</h2>
+      <div class="table">
+        <!-- Hemat -->
+        <div class="table__item px-3">
+          <h3 class="table__title font-semibold">Hemat</h3>
+          <p class="table__subtitle">Cocok untuk pengguna internet ringan.</p>
+          <div class="table__plan">
+            <span class="table__plan-currency">Rp</span>
+            <span class="table__plan-price">100.000</span>
+            <span class="table__plan-period">/bulan</span>
+          </div>
+          <ul class="table__list">
+            <li><b>2</b> Perangkat</li>
+            <li><b>10Mbps</b> UpTo</li>
+            <li><b>Unlimited</b> Kuota</li>
+            <li><b>Free</b> 1 DesaLink Voucher</li>
+          </ul>
+          <button type="button" class="table__button">Pilih Paket</button>
+        </div>
+        <!-- Reguler -->
+        <div class="table__item px-3">
+          <h3 class="table__title font-semibold">Reguler</h3>
+          <p class="table__subtitle">Cocok untuk pengguna internet umum.</p>
+          <div class="table__plan">
+            <span class="table__plan-currency">Rp</span>
+            <span class="table__plan-price">150.000</span>
+            <span class="table__plan-period">/bulan</span>
+          </div>
+          <ul class="table__list">
+            <li><b>5</b> Perangkat</li>
+            <li><b>20Mbps</b> UpTo</li>
+            <li><b>Unlimited</b> Kuota</li>
+            <li><b>Free</b> 1 DesaLink Voucher</li>
+          </ul>
+          <button type="button" class="table__button">Pilih Paket</button>
+        </div>
+        <!-- Premium -->
+        <div class="table__item px-3">
+          <h3 class="table__title font-semibold">Premium</h3>
+          <p class="table__subtitle">Cocok untuk streaming video & music.</p>
+          <div class="table__plan">
+            <span class="table__plan-currency">Rp</span>
+            <span class="table__plan-price">230.000</span>
+            <span class="table__plan-period">/bulan</span>
+          </div>
+          <ul class="table__list">
+            <li><b>8</b> Perangkat</li>
+            <li><b>30Mbps</b> UpTo</li>
+            <li><b>Unlimited</b> Kuota</li>
+            <li><b>Free</b> 1 DesaLink Voucher</li>
+          </ul>
+          <button type="button" class="table__button">Pilih Paket</button>
+        </div>
+      </div>
+    </div>
+    <!-- other items -->
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="testimonials" class="testimonials py-20 bg-gray-100">
+    <div class="container max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Testimoni Pelanggan</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="testimonial-card shadow-md rounded-md p-8" data-aos="fade-up">
+          <p class="text-gray-700 mb-4">"Saya sangat puas dengan layanan internet dari FOVillage.NET. Koneksi
+            internetnya stabil dan cepat, serta bisa diakses di mana saja."</p>
+          <div class="flex items-center">
+            <div class="avatar bg-gray-300 rounded-full w-12 h-12"></div>
+            <div class="ml-4">
+              <h3 class="text-lg font-bold">John Doe</h3>
+              <p class="text-gray-700 mb-0">Pengusaha</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card shadow-md rounded-md p-8" data-aos="fade-up" data-aos-delay="300">
+          <p class="text-gray-700 mb-4">"FOVillage.NET membantu saya untuk tetap terhubung dengan dunia digital kapan
+            saja dan di mana saja. Layanan yang sangat direkomendasikan."</p>
+          <div class="flex items-center">
+            <div class="avatar bg-gray-300 rounded-full w-12 h-12"></div>
+            <div class="ml-4">
+              <h3 class="text-lg font-bold">Jane Doe</h3>
+              <p class="text-gray-700 mb-0">Freelancer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card shadow-md rounded-md p-8" data-aos="fade-up" data-aos-delay="600">
+          <p class="text-gray-700 mb-4">"FOVillage.NET membantu saya mengatasi masalah koneksi internet di rumah dengan
+            cepat dan mudah. Saya sangat puas dengan layanan ini."</p>
+          <div class="flex items-center">
+            <div class="avatar bg-gray-300 rounded-full w-12 h-12"></div>
+            <div class="ml-4">
+              <h3 class="text-lg font-bold">Joe Smith</h3>
+              <p class="text-gray-700 mb-0">Pengajar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add FAQ Section -->
+  <section id="faq">
+    <div class="w-full py-20">
+      <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold mb-4">Frequently asked questions</h2>
+        <div class="accordion">
+          <div class="accordion-item border-b border-gray-400">
+            <div class="accordion-title cursor-pointer flex justify-between py-4 px-6 bg-white">
+              <div>Apa itu FOVillage.net?</div>
+              <svg class="w-6 h-6 text-gray-400 transform transition-transform duration-500" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+            <div class="accordion-content hidden pb-2 px-10 text-gray-700">
+              FOVillage.net adalah penyedia layanan internet yang menawarkan tiga paket: Hemat, Reguler, dan Premium.
+              Setiap paket memiliki kecepatan dan batasan perangkat yang berbeda, namun semua paket memungkinkan Anda
+              untuk mengakses internet di mana saja hanya dengan satu langganan.
+            </div>
+          </div>
+
+          <div class="accordion-item border-b border-gray-400">
+            <div class="accordion-title cursor-pointer flex justify-between py-4 px-6 bg-white">
+              <div>Apa itu DesaLink Voucher?</div>
+              <svg class="w-6 h-6 text-gray-400 transform transition-transform duration-500" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+            <div class="accordion-content hidden pb-2 px-10 text-gray-700">
+              DesaLink Voucher adalah voucher yang didapatkan setelah berlangganan dengan FOVillage .NET. Voucher ini
+              digunakan untuk anda agar tetap terhubung ke internet dimana saja selama masih mendapatkan WiFi dengan
+              SSID <b>FOVi Hotspot</b>. Satu voucher DesaLink dapat digunakan lebih dari 1 device.
+            </div>
+          </div>
+
+          <div class="accordion-item border-b border-gray-400">
+            <div class="accordion-title cursor-pointer flex justify-between py-4 px-6 bg-white">
+              <div>Apakah FOVillage.net berlaku FUP?</div>
+              <svg class="w-6 h-6 text-gray-400 transform transition-transform duration-500" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+            <div class="accordion-content hidden pb-2 px-10 text-gray-700">
+              Tidak, saat berlangganan di FOVillage .NET anda tidak dikenakan FUP atau batasan kuota apapun alias
+              <b>Unlimited Kuota</b>.
+            </div>
+          </div>
+
+          <div class="accordion-item border-b border-gray-400">
+            <div class="accordion-title cursor-pointer flex justify-between py-4 px-6 bg-white">
+              <div>Berapa biaya pemasangan FOVillage.net?</div>
+              <svg class="w-6 h-6 text-gray-400 transform transition-transform duration-500" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+            <div class="accordion-content hidden pb-2 px-10 text-gray-700">
+              Untuk berlangganan dengan FOVillage .Net anda tidak perlu mengeluarkan uang lebih untuk biaya pemasangan
+              atau dengan kata lain <b>Gratis Biaya Pasang</b>. Anda hanya perlu membayar untuk tagihan bulan pertama
+              setelah
+              pemasangan selesai dan Internet di rumah anda sudah aktif.
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Add Footer Section -->
+  <section id="/" class="bg-gray-900 text-white">
+    <footer class="text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="container py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Tentang Kami</h3>
+            <p class="mb-4 text-gray-500">FOVillage.NET adalah layanan internet wifi yang memberikan koneksi cepat,
+              stabil, dan tanpa
+              batasan kuota dengan harga terjangkau bagi masyarakat. Sekali berlangganan bisa akses dimana saja.</p>
+            <p class="mb-4 text-gray-500">Kontak kami untuk informasi lebih lanjut:</p>
+            <ul class="list-none">
+              <li class="flex items-center mb-2">
+                <i class="fas fa-phone mr-2 transform rotate-90"></i>
+                <a href="https://wa.me/6285750278549">+62 857-5027-8549</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <i class="fas fa-envelope mr-2"></i>
+                <a href="cs@fovillage.net.id">cs@fovillage.net.id</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:ml-7">
+            <div>
+              <h3 class="text-2xl font-bold mb-4">Layanan</h3>
+              <ul class="list-none">
+                <li><a href="#" class="block py-1 text-gray-500">Paket Hemat</a></li>
+                <li><a href="#" class="block py-1 text-gray-500">Paket Reguler</a></li>
+                <li><a href="#" class="block py-1 text-gray-500">Paket Premium</a></li>
+              </ul>
+            </div>
+            <div class=" my-4">
+              <h3 class="text-2xl font-bold cursor-pointer">Kebijakan Privasi</h3>
+              <h3 class="text-2xl font-bold cursor-pointer">Syarat & Ketentuan</h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Live Chat</h3>
+            <p class="mb-4 text-gray-500">Hubungi customer service kami melalui live chat untuk mendapatkan bantuan
+              lebih lanjut.</p>
+            <form>
+              <div class="flex items-center mb-4">
+                <input type="text" placeholder="Nama" class="w-full py-2 px-3 border border-gray-400 rounded-lg mr-2"
+                  required>
+                <input type="email" placeholder="Email" class="w-full py-2 px-3 border border-gray-400 rounded-lg"
+                  required>
+              </div>
+              <textarea placeholder="Pesan" class="w-full py-2 px-3 border border-gray-400 rounded-lg mb-4"
+                required></textarea>
+              <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-gray-800 py-2 text-center">
+      <p class=" text-gray-500">&copy; 2023 FOVillage.NET. All rights reserved.</p>
+    </div>
+  </section>
+
+  <script>
+    // Add Smooth Scrolling Functionality
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetEl = document.querySelector(this.getAttribute('href'));
+        const targetElTop = targetEl.getBoundingClientRect().top + window.pageYOffset - 64; // tambahkan offset -100px
+        window.scrollTo({
+          top: targetElTop,
+          behavior: "smooth"
+        });
+      });
+    });
+
+    // Get all the buttons
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach((item) => {
+      const title = item.querySelector('.accordion-title');
+      title.addEventListener('click', () => {
+        const content = item.querySelector('.accordion-content');
+        content.classList.toggle('hidden');
+        const arrow = item.querySelector('svg');
+        arrow.classList.toggle('rotate-180');
+      });
+    });
+
+    const primaryHeader = document.querySelector('.primary__header');
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 0) {
+        primaryHeader.classList.add('bg-blur');
+        primaryHeader.classList.remove('bg-transparent');
+      } else {
+        primaryHeader.classList.remove('bg-blur');
+        primaryHeader.classList.add('bg-transparent');
+      }
+    });
+  </script>
+  <!-- Add AOS Animation Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
