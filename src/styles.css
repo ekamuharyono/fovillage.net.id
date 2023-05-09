@@ -111,7 +111,7 @@ header.active .button:hover {
   text-align: center;
   color: #727586;
   background-color: #fff;
-  padding: 25px 20px;
+  pad: 25px 20px;
 }
 
 .table__item:nth-child(2) {
