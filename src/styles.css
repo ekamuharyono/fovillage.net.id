@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* navbar style */
@@ -35,6 +39,10 @@ html {
 }
 
 .nav__link {
+  transition: color .25s;
+}
+
+.list-link {
   transition: color .25s;
 }
 
