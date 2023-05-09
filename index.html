@@ -47,7 +47,7 @@
             </div>
           </div>
           <div
-            class="absolute bg-blue-400 md:bg-transparent py-3 flex w-full transform -translate-x-80 md:translate-x-0 md:w-max flex-col md:relative md:flex md:flex-row items-center list-link">
+            class="text-center transition-all absolute bg-blur md:bg-transparent py-3 flex w-full transform -translate-x-96 md:translate-x-0 md:w-max flex-col md:relative md:flex md:flex-row items-center list-link">
             <a href="#home"
               class="border-b md:w-max w-full md:border-none py-2 hover:text-gray-600 font-medium text-lg mr-4 blur-none">Home</a>
             <a href="#paket"
@@ -87,7 +87,7 @@
       <h2 class="text-3xl font-bold text-center mb-12">Paket Internet</h2>
       <div class="table">
         <!-- Hemat -->
-        <div class="table__item px-3">
+        <div class="table__item pb-3 px-3">
           <h3 class="table__title font-semibold">Hemat</h3>
           <p class="table__subtitle">Cocok untuk pengguna internet ringan.</p>
           <div class="table__plan">
@@ -105,7 +105,7 @@
         </div>
 
         <!-- Reguler -->
-        <div class="table__item px-3">
+        <div class="table__item pb-3 px-3">
           <h3 class="table__title font-semibold">Reguler</h3>
           <p class="table__subtitle">Cocok untuk pengguna internet umum.</p>
           <div class="table__plan">
@@ -123,7 +123,7 @@
         </div>
 
         <!-- Premium -->
-        <div class="table__item px-3">
+        <div class="table__item pb-3 px-3">
           <h3 class="table__title font-semibold">Premium</h3>
           <p class="table__subtitle">Cocok untuk streaming video & music.</p>
           <div class="table__plan">
@@ -367,7 +367,7 @@
     menuToggle.addEventListener('click', function () {
       menuIcon.classList.toggle('hidden');
       menuIconClose.classList.toggle('hidden');
-      menu.classList.toggle('-translate-x-80')
+      menu.classList.toggle('-translate-x-96')
       menu.classList.add('mt-16')
     });
 

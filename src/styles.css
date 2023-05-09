@@ -43,7 +43,7 @@ body {
 }
 
 .list-link {
-  transition: color .25s;
+  transition: color .25s, transform 300ms ease-in-out;
 }
 
 .nav__link:hover {
